@@ -154,6 +154,7 @@ class DeliveryTest {
         var secondMeetingDate = DataGenerator.generateDate(daysToAddForSecondMeeting);
         $("[data-test-id='city'] input").val(validUser.getCity());
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
+        $("[data-test-id='date'] input").val(firstMeetingDate);
         $("[data-test-id='name'] input").val(validUser.getName());
         $("[data-test-id='date'] input").val(firstMeetingDate);
         $("[data-test-id='agreement']").click();
